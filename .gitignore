@@ -5,6 +5,9 @@
 .nitro
 .cache
 
+# Dist folder is tracked for deployment
+# dist/
+
 # Node modules
 node_modules
 

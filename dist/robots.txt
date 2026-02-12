@@ -1,0 +1,26 @@
+# WorldOfProject - robots.txt
+# https://worldofproject.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://worldofproject.com/sitemap.xml
+
+# Crawl-delay für respektables Crawling
+Crawl-delay: 1
+
+# Blockiere sensible Pfade (falls in Zukunft relevant)
+Disallow: /api/
+Disallow: /_nuxt/
+Disallow: /admin/
+
+# Google-spezifisch
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing-spezifisch
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
