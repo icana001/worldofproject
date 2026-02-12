@@ -1,0 +1,20 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="180" height="180" rx="36" fill="#2563eb"/>
+  
+  <!-- Globe -->
+  <circle cx="90" cy="90" r="70" fill="#2563eb"/>
+  <circle cx="90" cy="90" r="65" stroke="white" stroke-width="2" stroke-opacity="0.3"/>
+  <ellipse cx="90" cy="90" rx="65" ry="32" stroke="white" stroke-width="1.5" stroke-opacity="0.4" fill="none"/>
+  <ellipse cx="90" cy="90" rx="32" ry="65" stroke="white" stroke-width="1.5" stroke-opacity="0.4" fill="none"/>
+  <line x1="25" y1="90" x2="155" y2="90" stroke="white" stroke-width="1.5" stroke-opacity="0.4"/>
+  <line x1="90" y1="25" x2="90" y2="155" stroke="white" stroke-width="1.5" stroke-opacity="0.4"/>
+  
+  <!-- Document -->
+  <rect x="55" y="55" width="55" height="55" rx="10" fill="white"/>
+  <path d="M70 78h25M70 90h20" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Checkmark -->
+  <circle cx="115" cy="115" r="22" fill="#10b981"/>
+  <path d="M105 115l6 6 12-12" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,54 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#2563eb"/>
+  <rect width="1200" height="630" fill="url(#gradient)"/>
+  
+  <!-- Grid Pattern -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Logo -->
+  <g transform="translate(100, 215)">
+    <circle cx="100" cy="100" r="90" fill="#2563eb"/>
+    <circle cx="100" cy="100" r="85" stroke="white" stroke-width="3" stroke-opacity="0.3" fill="none"/>
+    <ellipse cx="100" cy="100" rx="85" ry="42" stroke="white" stroke-width="2" stroke-opacity="0.4" fill="none"/>
+    <ellipse cx="100" cy="100" rx="42" ry="85" stroke="white" stroke-width="2" stroke-opacity="0.4" fill="none"/>
+    <line x1="15" y1="100" x2="185" y2="100" stroke="white" stroke-width="2" stroke-opacity="0.4"/>
+    <line x1="100" y1="15" x2="100" y2="185" stroke="white" stroke-width="2" stroke-opacity="0.4"/>
+    <rect x="60" y="60" width="80" height="80" rx="12" fill="white"/>
+    <path d="M80 95h40M80 115h30" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="140" cy="140" r="28" fill="#10b981"/>
+    <path d="M128 140l8 8 16-16" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="320" y="260" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="700" fill="white">WorldOfProject</text>
+  <text x="320" y="330" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="400" fill="white" opacity="0.9">ProjectOps ohne Overhead</text>
+  
+  <!-- Features -->
+  <g transform="translate(320, 370)" font-family="Inter, system-ui, sans-serif" font-size="22" fill="white" opacity="0.8">
+    <text x="0" y="0">✓ Self-hosted</text>
+    <text x="180" y="0">✓ DSGVO-konform</text>
+    <text x="400" y="0">✓ One-Page Projekte</text>
+    <text x="0" y="40">✓ Meeting Notes</text>
+    <text x="180" y="40">✓ Zeiterfassung</text>
+    <text x="400" y="40">✓ Leistungsnachweise</text>
+  </g>
+  
+  <!-- IC-RESULTING Badge -->
+  <g transform="translate(320, 480)">
+    <rect width="280" height="50" rx="8" fill="white" fill-opacity="0.15"/>
+    <text x="20" y="33" font-family="Inter, system-ui, sans-serif" font-size="18" fill="white">Ein Produkt von IC-RESULTING</text>
+  </g>
+  
+  <!-- URL -->
+  <text x="1100" y="590" font-family="Inter, system-ui, sans-serif" font-size="20" fill="white" opacity="0.7" text-anchor="end">worldofproject.com</text>
+</svg>
