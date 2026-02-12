@@ -21,6 +21,8 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        // Google Search Console Verification
+        { name: 'google-site-verification', content: 'ULygywxDz8XTuk-Iy68691HbCDZb7YN0zVIsVAOIlGQ' },
         {
           name: 'description',
           content:
