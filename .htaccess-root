@@ -1,0 +1,9 @@
+DirectoryIndex index.php index.html
+
+RewriteEngine On
+
+# Nur für worldofproject.com - PHP-Handler nutzen
+RewriteCond %{HTTP_HOST} ^(www\.)?worldofproject\.com$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php [L]

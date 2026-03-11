@@ -603,35 +603,268 @@ const getCategoryColor = (color: string) => {
 
     <main>
       <!-- Hero / Dashboard Header -->
-      <section class="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-12 lg:py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-10">
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Software Suite mit <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-violet-400">KI-Power</span>
+      <section class="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white py-16 lg:py-24 relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-40"></div>
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="text-center mb-12">
+            <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium text-blue-300 mb-6 border border-white/20">
+              🚀 Open Source • Lokale KI • Digitale Souveränität
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white">
+              Software Suite mit <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-violet-400">KI-Power</span>
             </h1>
-            <p class="text-lg text-neutral-300 max-w-2xl mx-auto">
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
               Professionelle Tools für PPM, Automatisierung und DevSecOps. 
-              Entwickelt für den deutschen Mittelstand. Self-hosted. DSGVO-konform.
+              Entwickelt für den deutschen Mittelstand. <strong class="text-white">Self-hosted. DSGVO-konform.</strong>
             </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+              <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-violet-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-violet-400 hover:to-purple-500 transition-all shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40">
+                <img src="/WebstreeMaskot.png" alt="Webi" class="w-7 h-7 object-contain" />
+                Webi kennenlernen – Lokale KI
+              </a>
+              <a href="#tools" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all">
+                Alle Tools ansehen
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </a>
+            </div>
           </div>
 
           <!-- Stats Cards -->
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 hover:bg-white/15 transition-colors">
               <div class="text-3xl font-bold text-white mb-1">{{ stats.total }}</div>
-              <div class="text-sm text-neutral-400">Tools Gesamt</div>
+              <div class="text-sm text-blue-200">Tools Gesamt</div>
             </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 hover:bg-white/15 transition-colors">
               <div class="text-3xl font-bold text-emerald-400 mb-1">{{ stats.active }}</div>
-              <div class="text-sm text-neutral-400">Produktiv</div>
+              <div class="text-sm text-blue-200">Produktiv</div>
             </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 hover:bg-white/15 transition-colors">
               <div class="text-3xl font-bold text-amber-400 mb-1">{{ stats.beta }}</div>
-              <div class="text-sm text-neutral-400">In Beta</div>
+              <div class="text-sm text-blue-200">In Beta</div>
             </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 hover:bg-white/15 transition-colors">
               <div class="text-3xl font-bold text-violet-400 mb-1">{{ stats.coming }}</div>
-              <div class="text-sm text-neutral-400">Coming Soon</div>
+              <div class="text-sm text-blue-200">Coming Soon</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Webstree KI-Plattform Section -->
+      <section class="py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-violet-50/30 to-purple-50/20 dark:from-neutral-900 dark:via-violet-950/20 dark:to-purple-950/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <span class="inline-block px-4 py-2 bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-400 rounded-full text-sm font-semibold mb-4">
+              Lokale KI-Plattform
+            </span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white mb-6">
+              Webstree – <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">Intelligente Zusammenarbeit</span>
+            </h2>
+            <p class="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto leading-relaxed">
+              Die KI-Plattform für Teams, die Wert auf Datenschutz und Unabhängigkeit legen. 
+              Betreiben Sie Webstree lokal oder auf Ihrer eigenen Server-Infrastruktur.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Text Content -->
+            <div>
+              <h3 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
+                Ihr persönlicher KI-Assistent – ohne Kompromisse
+              </h3>
+              <p class="text-lg text-neutral-600 dark:text-neutral-300 mb-8 leading-relaxed">
+                <strong class="text-neutral-900 dark:text-white">Webi</strong> ist Ihr intelligenter Arbeitspartner, der direkt auf Ihrem lokalen Rechner 
+                oder einem dedizierten Server in Ihrem Unternehmen läuft. Keine externen Cloud-Dienste, keine Datenübertragung an Dritte – 
+                volle Kontrolle über Ihre sensiblen Informationen.
+              </p>
+              
+              <div class="space-y-5 mb-10">
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-neutral-900 dark:text-white text-lg">Flexible Bereitstellung</h4>
+                    <p class="text-neutral-600 dark:text-neutral-400">Betrieb auf lokalem Desktop, eigenem Server oder gemieteter Infrastruktur – Sie entscheiden, wo Ihre KI läuft.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-neutral-900 dark:text-white text-lg">Team-Collaboration</h4>
+                    <p class="text-neutral-600 dark:text-neutral-400">Arbeiten Sie in Echtzeit mit Kollegen zusammen – gemeinsame Dokumente, Chat und KI-gestützte Workflows.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-neutral-900 dark:text-white text-lg">Absolute Datensouveränität</h4>
+                    <p class="text-neutral-600 dark:text-neutral-400">Ihre Daten verlassen niemals Ihre Infrastruktur. DSGVO-konform by Design, Made in Germany.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-neutral-900 dark:text-white text-lg">Keine laufenden KI-Kosten</h4>
+                    <p class="text-neutral-600 dark:text-neutral-400">Unbegrenzte Nutzung ohne Token-Limits oder API-Gebühren – mit Open-Source-KI-Modellen.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-4">
+                <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-violet-500 hover:to-purple-500 transition-all shadow-lg hover:shadow-xl">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                  Webstree.com besuchen
+                </a>
+                <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 border-2 border-violet-300 dark:border-violet-700 text-violet-700 dark:text-violet-400 px-8 py-4 rounded-xl font-semibold hover:bg-violet-50 dark:hover:bg-violet-900/20 transition-all">
+                  Beratung anfragen
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Card with Mascot -->
+            <div class="relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-violet-500 to-purple-600 rounded-3xl blur-3xl opacity-20"></div>
+              <div class="relative bg-white dark:bg-neutral-800 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-8 shadow-2xl">
+                <!-- Mascot Header -->
+                <div class="flex flex-col items-center text-center mb-8">
+                  <div class="relative mb-4">
+                    <div class="absolute inset-0 bg-violet-400 rounded-full blur-xl opacity-30 animate-pulse"></div>
+                    <img src="/WebstreeMaskot.png" alt="Webi – Ihr KI-Assistent" class="relative w-28 h-28 object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <h3 class="text-2xl font-bold text-neutral-900 dark:text-white mb-1">Webi</h3>
+                  <p class="text-violet-600 dark:text-violet-400 font-medium">Ihr intelligenter Arbeitspartner</p>
+                </div>
+
+                <!-- Feature Grid -->
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                  <div class="p-4 bg-neutral-50 dark:bg-neutral-700/50 rounded-xl text-center">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-violet-100 dark:bg-violet-900/30 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-violet-600 dark:text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    </div>
+                    <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Office Suite</span>
+                  </div>
+                  <div class="p-4 bg-neutral-50 dark:bg-neutral-700/50 rounded-xl text-center">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                    </div>
+                    <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300">KI-Chat</span>
+                  </div>
+                  <div class="p-4 bg-neutral-50 dark:bg-neutral-700/50 rounded-xl text-center">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Teamwork</span>
+                  </div>
+                  <div class="p-4 bg-neutral-50 dark:bg-neutral-700/50 rounded-xl text-center">
+                    <div class="w-10 h-10 mx-auto mb-2 bg-amber-100 dark:bg-amber-900/30 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-amber-600 dark:text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                    </div>
+                    <span class="text-sm font-medium text-neutral-700 dark:text-neutral-300">Open Source</span>
+                  </div>
+                </div>
+
+                <!-- Deployment Options -->
+                <div class="bg-gradient-to-r from-violet-50 to-purple-50 dark:from-violet-900/20 dark:to-purple-900/20 rounded-xl p-4 mb-6 border border-violet-100 dark:border-violet-800">
+                  <p class="text-sm font-semibold text-neutral-900 dark:text-white mb-2">Deployment-Optionen:</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white dark:bg-neutral-800 rounded-full text-xs font-medium text-neutral-700 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-600">Desktop (Win/Mac/Linux)</span>
+                    <span class="px-3 py-1 bg-white dark:bg-neutral-800 rounded-full text-xs font-medium text-neutral-700 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-600">Eigener Server</span>
+                    <span class="px-3 py-1 bg-white dark:bg-neutral-800 rounded-full text-xs font-medium text-neutral-700 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-600">Private Cloud</span>
+                  </div>
+                </div>
+
+                <!-- CTA -->
+                <a href="https://webstree.com" target="_blank" class="block w-full text-center bg-gradient-to-r from-violet-600 to-purple-600 text-white px-6 py-4 rounded-xl font-semibold hover:from-violet-500 hover:to-purple-500 transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]">
+                  Mehr erfahren →
+                </a>
+                
+                <p class="text-center text-sm text-neutral-500 dark:text-neutral-400 mt-4">
+                  In Entwicklung – Jetzt für Early Access registrieren
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vision Section with IDEA_WEBSTREE -->
+          <div class="mt-20 pt-16 border-t border-neutral-200 dark:border-neutral-700">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+              <!-- Image -->
+              <div class="relative order-2 lg:order-1">
+                <div class="absolute inset-0 bg-gradient-to-br from-violet-400 to-purple-500 rounded-3xl blur-3xl opacity-15"></div>
+                <div class="relative bg-white dark:bg-neutral-800 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-4 shadow-2xl overflow-hidden">
+                  <img 
+                    src="/IDEA_WEBSTREE.png" 
+                    alt="Webstree Plattform Vision – Die wachsende KI-Plattform" 
+                    class="w-full h-auto rounded-xl"
+                  />
+                </div>
+              </div>
+
+              <!-- Text Content -->
+              <div class="order-1 lg:order-2">
+                <span class="inline-block px-4 py-2 bg-gradient-to-r from-violet-100 to-purple-100 dark:from-violet-900/30 dark:to-purple-900/30 text-violet-700 dark:text-violet-400 rounded-full text-sm font-semibold mb-4">
+                  Unsere Vision
+                </span>
+                <h3 class="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white mb-6">
+                  Eine Plattform, die mit Ihnen <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">wächst</span>
+                </h3>
+                <p class="text-lg text-neutral-600 dark:text-neutral-300 mb-6 leading-relaxed">
+                  Webstree ist mehr als eine Software – es ist ein wachsendes Ökosystem intelligenter Werkzeuge, 
+                  die Ihre Arbeitsweise revolutionieren. Von der ersten Idee bis zur finalen Umsetzung.
+                </p>
+                
+                <div class="space-y-4 mb-8">
+                  <div class="flex items-center gap-4 p-4 bg-neutral-50 dark:bg-neutral-700/50 rounded-xl">
+                    <div class="w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-neutral-900 dark:text-white">Kontinuierliche Weiterentwicklung</h4>
+                      <p class="text-sm text-neutral-600 dark:text-neutral-400">Neue Features und KI-Modelle werden regelmäßig integriert</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4 p-4 bg-neutral-50 dark:bg-neutral-700/50 rounded-xl">
+                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-neutral-900 dark:text-white">Modularer Aufbau</h4>
+                      <p class="text-sm text-neutral-600 dark:text-neutral-400">Wählen Sie nur die Module, die Sie wirklich brauchen</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4 p-4 bg-neutral-50 dark:bg-neutral-700/50 rounded-xl">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-neutral-900 dark:text-white">Skalierbar für jede Teamgröße</h4>
+                      <p class="text-sm text-neutral-600 dark:text-neutral-400">Vom Einzelunternehmer bis zum Enterprise-Team</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                  <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-violet-500 hover:to-purple-500 transition-all shadow-lg hover:shadow-xl">
+                    Jetzt Early Access sichern
+                  </a>
+                  <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 text-violet-700 dark:text-violet-400 px-6 py-3 rounded-xl font-semibold hover:bg-violet-50 dark:hover:bg-violet-900/20 transition-all">
+                    Vertriebspartner werden →
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -667,8 +900,14 @@ const getCategoryColor = (color: string) => {
       </section>
 
       <!-- Tools Grid -->
-      <section class="py-12 lg:py-16">
+      <section id="tools" class="py-16 lg:py-20 bg-white dark:bg-neutral-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white mb-4">Unsere Software-Tools</h2>
+            <p class="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+              Professionelle Lösungen für Projektmanagement, KI-Automatisierung und DevSecOps
+            </p>
+          </div>
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div
               v-for="tool in filteredTools"
@@ -715,16 +954,23 @@ const getCategoryColor = (color: string) => {
       </section>
 
       <!-- CTA Section -->
-      <section class="py-16 bg-gradient-to-br from-primary-600 to-primary-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="text-3xl font-bold text-white mb-4">Interesse an unseren Tools?</h2>
-          <p class="text-primary-100 text-lg mb-8">
+      <section class="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-violet-700 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Interesse an unseren Tools?</h2>
+          <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
             Vereinbaren Sie ein unverbindliches Gespräch. Wir zeigen Ihnen, welche Tools zu Ihren Anforderungen passen.
           </p>
-          <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 bg-white text-primary-700 px-8 py-4 rounded-xl font-semibold hover:bg-primary-50 transition-colors">
-            Gespräch vereinbaren
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-          </a>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors shadow-lg">
+              Gespräch vereinbaren
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+            <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-violet-500/20 to-purple-500/20 backdrop-blur-sm border border-violet-300/30 text-white px-8 py-4 rounded-xl font-semibold hover:from-violet-500/30 hover:to-purple-500/30 transition-colors">
+              <img src="/WebstreeMaskot.png" alt="Webi" class="w-6 h-6 object-contain" />
+              Webi – Lokale KI ohne Kosten
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -817,19 +1063,23 @@ const getCategoryColor = (color: string) => {
     </Teleport>
 
     <!-- Footer -->
-    <footer class="bg-neutral-900 text-neutral-400 py-12">
+    <footer class="bg-slate-900 text-neutral-400 py-12 border-t border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-4 gap-8 mb-8">
           <div class="md:col-span-2">
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center">
+              <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center">
                 <span class="text-white font-bold">IC</span>
               </div>
               <span class="text-lg font-bold text-white">IC-RESULTING</span>
             </div>
-            <p class="text-sm max-w-md">
+            <p class="text-sm max-w-md mb-4">
               Professionelle Software-Lösungen mit KI-Funktionen. Entwickelt aus jahrelanger Projekt- und Service-Management-Erfahrung.
             </p>
+            <div class="flex items-center gap-2 px-3 py-2 bg-slate-800 rounded-lg w-fit">
+              <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+              <span class="text-sm text-cyan-400">Partner: webstree.com</span>
+            </div>
           </div>
           <div>
             <h4 class="font-semibold text-white mb-4">Kontakt</h4>
@@ -843,13 +1093,24 @@ const getCategoryColor = (color: string) => {
             <h4 class="font-semibold text-white mb-4">Links</h4>
             <ul class="space-y-2 text-sm">
               <li><a href="https://ic-resulting.de" target="_blank" class="hover:text-white transition-colors">ic-resulting.de</a></li>
+              <li><a href="https://webstree.com" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
+                <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+                webstree.com
+              </a></li>
               <li><NuxtLink to="/impressum" class="hover:text-white transition-colors">Impressum</NuxtLink></li>
               <li><NuxtLink to="/datenschutz" class="hover:text-white transition-colors">Datenschutz</NuxtLink></li>
             </ul>
           </div>
         </div>
-        <div class="pt-8 border-t border-neutral-800 text-center text-sm">
-          © {{ new Date().getFullYear() }} IC-RESULTING. Alle Rechte vorbehalten.
+        <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+          <span>© {{ new Date().getFullYear() }} IC-RESULTING. Alle Rechte vorbehalten.</span>
+          <div class="flex items-center gap-4">
+            <span class="text-slate-500">Partner:</span>
+            <a href="https://webstree.com" target="_blank" class="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+              Webstree.com
+            </a>
+          </div>
         </div>
       </div>
     </footer>
