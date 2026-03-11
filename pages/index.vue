@@ -623,8 +623,8 @@ const getCategoryColor = (color: string) => {
             </p>
             <div class="mt-8 flex flex-wrap justify-center gap-4">
               <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-violet-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-violet-400 hover:to-purple-500 transition-all shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40">
-                <img src="/WebstreeMaskot.png" alt="Webi" class="w-7 h-7 object-contain" />
-                Webi kennenlernen – Lokale KI
+                <img src="/WebstreeMaskot.png" alt="Webstree" class="w-7 h-7 object-contain" />
+                Webstree entdecken – Lokale KI
               </a>
               <a href="#tools" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all">
                 Alle Tools ansehen
@@ -679,7 +679,7 @@ const getCategoryColor = (color: string) => {
                 Ihr persönlicher KI-Assistent – ohne Kompromisse
               </h3>
               <p class="text-lg text-neutral-600 dark:text-neutral-300 mb-8 leading-relaxed">
-                <strong class="text-neutral-900 dark:text-white">Webi</strong> ist Ihr intelligenter Arbeitspartner, der direkt auf Ihrem lokalen Rechner 
+                <strong class="text-neutral-900 dark:text-white">Webstree</strong> ist Ihre autonome Business-Plattform, die direkt auf Ihrem lokalen Rechner 
                 oder einem dedizierten Server in Ihrem Unternehmen läuft. Keine externen Cloud-Dienste, keine Datenübertragung an Dritte – 
                 volle Kontrolle über Ihre sensiblen Informationen.
               </p>
@@ -742,10 +742,10 @@ const getCategoryColor = (color: string) => {
                 <div class="flex flex-col items-center text-center mb-8">
                   <div class="relative mb-4">
                     <div class="absolute inset-0 bg-violet-400 rounded-full blur-xl opacity-30 animate-pulse"></div>
-                    <img src="/WebstreeMaskot.png" alt="Webi – Ihr KI-Assistent" class="relative w-28 h-28 object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-300" />
+                    <img src="/WebstreeMaskot.png" alt="Webstree – AI Autonomous Business Platform" class="relative w-28 h-28 object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 class="text-2xl font-bold text-neutral-900 dark:text-white mb-1">Webi</h3>
-                  <p class="text-violet-600 dark:text-violet-400 font-medium">Ihr intelligenter Arbeitspartner</p>
+                  <h3 class="text-2xl font-bold text-neutral-900 dark:text-white mb-1">Webstree</h3>
+                  <p class="text-violet-600 dark:text-violet-400 font-medium">AI Autonomous Business Platform</p>
                 </div>
 
                 <!-- Feature Grid -->
@@ -967,8 +967,8 @@ const getCategoryColor = (color: string) => {
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </a>
             <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-violet-500/20 to-purple-500/20 backdrop-blur-sm border border-violet-300/30 text-white px-8 py-4 rounded-xl font-semibold hover:from-violet-500/30 hover:to-purple-500/30 transition-colors">
-              <img src="/WebstreeMaskot.png" alt="Webi" class="w-6 h-6 object-contain" />
-              Webi – Lokale KI ohne Kosten
+              <img src="/WebstreeMaskot.png" alt="Webstree" class="w-6 h-6 object-contain" />
+              Webstree – Lokale KI ohne Kosten
             </a>
           </div>
         </div>
