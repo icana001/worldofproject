@@ -1,4 +1,5 @@
-# WorldOfProject - robots.txt
+# Webstree – Entwickelt in Deutschland
+# Entstanden in Zusammenarbeit mit IC-RESULTING & Partner
 # https://worldofproject.com
 
 User-agent: *
@@ -10,7 +11,7 @@ Sitemap: https://worldofproject.com/sitemap.xml
 # Crawl-delay für respektables Crawling
 Crawl-delay: 1
 
-# Blockiere sensible Pfade (falls in Zukunft relevant)
+# Blockiere sensible Pfade
 Disallow: /api/
 Disallow: /_nuxt/
 Disallow: /admin/

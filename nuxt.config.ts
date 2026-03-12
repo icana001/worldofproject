@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'WorldOfProject – ProjectOps Software für Mittelstand | Self-Hosted & DSGVO',
+      title: 'Webstree – KI-Plattform für KMU | Digital souverän bleiben',
       htmlAttrs: {
         lang: 'de',
       },
@@ -26,57 +26,57 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'WorldOfProject: Self-hosted Projektmanagement-Software für den DACH-Mittelstand. One-Page Projekte, Meeting Notes, Zeiterfassung & Leistungsnachweise. DSGVO-konform, ohne Overhead. Von IC-RESULTING.',
+            'Webstree: Die Open Source KI-Plattform für KMU. Behalten Sie die Kontrolle über Ihre Daten – lokal, sicher, digital souverän. In Entwicklung. Entstanden mit IC-RESULTING & Partner.',
         },
         { name: 'format-detection', content: 'telephone=no' },
-        // SEO Keywords
+        // SEO Keywords - Fokus auf KMU und digitale Souveränität
         {
           name: 'keywords',
           content:
-            'Projektmanagement Software, Self-Hosted, DSGVO-konform, Mittelstand, ProjectOps, Zeiterfassung, Leistungsnachweis, Meeting Notes, Kanban, PMO Software, Deutschland, Österreich, Schweiz, DACH',
+            'KI für KMU, KI Plattform Mittelstand, digitale Souveränität, lokale KI, KMU Software, Open Source KI, Webstree, Self-Hosted AI, DSGVO KI, KI ohne Cloud, Unternehmenssoftware KMU, IC-RESULTING, Private AI, Datenschutz KI, KI Deutschland',
         },
         // Robots
         { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
         { name: 'googlebot', content: 'index, follow' },
         // Author & Publisher
-        { name: 'author', content: 'IC-RESULTING - Ibrahim Canakci' },
-        { name: 'publisher', content: 'IC-RESULTING' },
-        // Geo Tags für lokales SEO
+        { name: 'author', content: 'IC-RESULTING & Partner' },
+        { name: 'publisher', content: 'IC-RESULTING & Partner' },
+        // Geo Tags für lokales SEO - Wiesbaden
         { name: 'geo.region', content: 'DE-HE' },
         { name: 'geo.placename', content: 'Wiesbaden' },
         { name: 'geo.position', content: '50.0826;8.2428' },
         { name: 'ICBM', content: '50.0826, 8.2428' },
-        // OpenGraph
-        { property: 'og:title', content: 'WorldOfProject – ProjectOps Software für Mittelstand' },
+        // OpenGraph - KMU-Fokus
+        { property: 'og:title', content: 'Webstree – KI-Plattform für KMU | Digital souverän bleiben' },
         {
           property: 'og:description',
           content:
-            'Self-hosted Projektmanagement für den DACH-Mittelstand. One-Page Projekte, Meeting Notes, Zeiterfassung. DSGVO-konform & ohne Overhead.',
+            'Die Open Source KI-Plattform für kleine und mittlere Unternehmen. Lokal, sicher, DSGVO-konform. In Entwicklung.',
         },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://worldofproject.com' },
         { property: 'og:locale', content: 'de_DE' },
         { property: 'og:locale:alternate', content: 'de_AT' },
         { property: 'og:locale:alternate', content: 'de_CH' },
-        { property: 'og:site_name', content: 'WorldOfProject' },
+        { property: 'og:site_name', content: 'Webstree – KI für KMU' },
         { property: 'og:image', content: 'https://worldofproject.com/og-image.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'WorldOfProject - ProjectOps ohne Overhead' },
-        // Twitter
+        { property: 'og:image:alt', content: 'Webstree – KI-Plattform für KMU | Digital souverän' },
+        // Twitter - KMU-Fokus
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@ic_resulting' },
         { name: 'twitter:creator', content: '@ic_resulting' },
-        { name: 'twitter:title', content: 'WorldOfProject – ProjectOps Software für Mittelstand' },
+        { name: 'twitter:title', content: 'Webstree – KI-Plattform für KMU | IC-RESULTING & Partner' },
         {
           name: 'twitter:description',
           content:
-            'Self-hosted Projektmanagement für den DACH-Mittelstand. DSGVO-konform & ohne Overhead.',
+            'KI für KMU: Digital souverän bleiben. Open Source, lokal, DSGVO-konform. In Entwicklung.',
         },
         { name: 'twitter:image', content: 'https://worldofproject.com/og-image.png' },
-        // Theme Color
-        { name: 'theme-color', content: '#2563eb' },
-        { name: 'msapplication-TileColor', content: '#2563eb' },
+        // Theme Color - Violet für Webstree
+        { name: 'theme-color', content: '#7c3aed' },
+        { name: 'msapplication-TileColor', content: '#7c3aed' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
@@ -101,6 +101,83 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
+        },
+      ],
+      // Structured Data (JSON-LD) für bessere SERP-Darstellung
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'Organization',
+                '@id': 'https://ic-resulting.de/#organization',
+                name: 'IC-RESULTING & Partner',
+                url: 'https://ic-resulting.de',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://worldofproject.com/og-image.png',
+                },
+                sameAs: [
+                  'https://webstree.com',
+                  'https://worldofproject.com',
+                ],
+                address: {
+                  '@type': 'PostalAddress',
+                  addressLocality: 'Wiesbaden',
+                  addressRegion: 'Hessen',
+                  addressCountry: 'DE',
+                },
+                founder: {
+                  '@type': 'Person',
+                  name: 'Ibrahim Canakci',
+                },
+                description: 'Entwickelt in Deutschland. KI-Lösungen entstanden in Zusammenarbeit mit IC-RESULTING & Partner.',
+              },
+              {
+                '@type': 'SoftwareApplication',
+                '@id': 'https://webstree.com/#software',
+                name: 'Webstree',
+                applicationCategory: 'BusinessApplication',
+                operatingSystem: 'Windows, macOS, Linux',
+                offers: {
+                  '@type': 'Offer',
+                  price: '0',
+                  priceCurrency: 'EUR',
+                  description: 'Open Source – kostenlos nutzbar',
+                },
+                description: 'Open Source KI-Ökosystem. Entstanden in Zusammenarbeit mit IC-RESULTING & Partner. Entwickelt in Deutschland, 100% DSGVO-konform, Self-Hosted.',
+                featureList: [
+                  'Entwickelt in Deutschland',
+                  'Lokale KI ohne Cloud',
+                  '100% DSGVO-konform',
+                  'Open Source',
+                  'Self-Hosted',
+                  'Office Suite Integration',
+                  'KI-Chat & Assistenten',
+                  'Team-Kollaboration',
+                ],
+                author: {
+                  '@id': 'https://ic-resulting.de/#organization',
+                },
+                provider: {
+                  '@id': 'https://ic-resulting.de/#organization',
+                },
+              },
+              {
+                '@type': 'WebSite',
+                '@id': 'https://worldofproject.com/#website',
+                url: 'https://worldofproject.com',
+                name: 'Webstree – Entwickelt in Deutschland',
+                description: 'Open Source KI-Ökosystem. Entstanden in Zusammenarbeit mit IC-RESULTING & Partner. Entwickelt in Deutschland.',
+                publisher: {
+                  '@id': 'https://ic-resulting.de/#organization',
+                },
+                inLanguage: 'de-DE',
+              },
+            ],
+          }),
         },
       ],
     },

@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
-// SEO
+// SEO - Webstree KI-Plattform für KMU
 useSeoMeta({
-  title: 'IC-RESULTING | KI-Software & PPM Tools',
-  description: 'Professionelle Software-Lösungen mit KI-Funktionen. PPM, Automatisierung, DevSecOps Tools - entwickelt für den deutschen Mittelstand.',
+  title: 'Webstree | KI-Plattform für KMU – Digital souverän bleiben',
+  description: 'Webstree: Die Open Source KI-Plattform für kleine und mittlere Unternehmen. Lokal, digital souverän, DSGVO-konform. In Entwicklung – bereits bei ersten Kunden im Einsatz.',
+  ogTitle: 'Webstree – KI-Plattform für KMU | Digital souverän bleiben',
+  ogDescription: 'Open Source KI für den Mittelstand. Lokale Datenhoheit, keine Cloud-Abhängigkeit. In Entwicklung – jetzt Early Access sichern.',
+  twitterTitle: 'Webstree – KI für KMU | Digital souverän',
+  twitterDescription: 'Die Open Source KI-Plattform für KMU. Lokal, sicher, DSGVO-konform. In Entwicklung.',
 })
 
 // Dark mode
@@ -611,45 +615,47 @@ const getCategoryColor = (color: string) => {
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="text-center mb-12">
-            <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium text-blue-300 mb-6 border border-white/20">
-              🚀 Open Source • Lokale KI • Digitale Souveränität
+            <span class="inline-block px-4 py-2 bg-amber-500/20 backdrop-blur-sm rounded-full text-sm font-medium text-amber-300 mb-6 border border-amber-400/30">
+              🚧 In Entwicklung • Bereits bei ersten Kunden im Einsatz • Open Source
             </span>
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white">
-              Software Suite mit <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-violet-400">KI-Power</span>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-purple-400 to-cyan-400">Webstree</span> – KI für KMU
             </h1>
-            <p class="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Professionelle Tools für PPM, Automatisierung und DevSecOps. 
-              Entwickelt für den deutschen Mittelstand. <strong class="text-white">Self-hosted. DSGVO-konform.</strong>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed mb-2">
+              <strong class="text-white">Digital souverän bleiben.</strong> Die Open Source KI-Plattform für kleine und mittlere Unternehmen.
+            </p>
+            <p class="text-lg text-blue-200 max-w-2xl mx-auto">
+              Lokal. Sicher. DSGVO-konform. Entstanden in Zusammenarbeit mit <a href="https://ic-resulting.de" target="_blank" class="underline hover:text-white transition-colors">IC-RESULTING</a> & Partner.
             </p>
             <div class="mt-8 flex flex-wrap justify-center gap-4">
               <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-violet-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-violet-400 hover:to-purple-500 transition-all shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40">
-                <img src="/WebstreeMaskot.png" alt="Webstree" class="w-7 h-7 object-contain" />
-                Webstree entdecken – Lokale KI
+                <img src="/logo.svg" alt="Webstree" class="w-7 h-7 object-contain" />
+                Webstree entdecken
               </a>
-              <a href="#tools" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all">
-                Alle Tools ansehen
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all">
+                Kontakt aufnehmen
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </a>
             </div>
           </div>
 
-          <!-- Stats Cards -->
+          <!-- Stats Cards - Webstree für KMU -->
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 hover:bg-white/15 transition-colors">
-              <div class="text-3xl font-bold text-white mb-1">{{ stats.total }}</div>
-              <div class="text-sm text-blue-200">Tools Gesamt</div>
+              <div class="text-3xl font-bold text-white mb-1">48+</div>
+              <div class="text-sm text-blue-200">Features & Module</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-amber-400/30 hover:bg-white/15 transition-colors">
+              <div class="text-3xl font-bold text-amber-400 mb-1">🚧</div>
+              <div class="text-sm text-blue-200">In Entwicklung</div>
             </div>
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 hover:bg-white/15 transition-colors">
-              <div class="text-3xl font-bold text-emerald-400 mb-1">{{ stats.active }}</div>
-              <div class="text-sm text-blue-200">Produktiv</div>
+              <div class="text-3xl font-bold text-emerald-400 mb-1">0€</div>
+              <div class="text-sm text-blue-200">Open Source</div>
             </div>
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 hover:bg-white/15 transition-colors">
-              <div class="text-3xl font-bold text-amber-400 mb-1">{{ stats.beta }}</div>
-              <div class="text-sm text-blue-200">In Beta</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 hover:bg-white/15 transition-colors">
-              <div class="text-3xl font-bold text-violet-400 mb-1">{{ stats.coming }}</div>
-              <div class="text-sm text-blue-200">Coming Soon</div>
+              <div class="text-3xl font-bold text-violet-400 mb-1">KMU</div>
+              <div class="text-sm text-blue-200">Zielgruppe</div>
             </div>
           </div>
         </div>
@@ -660,15 +666,15 @@ const getCategoryColor = (color: string) => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Section Header -->
           <div class="text-center mb-16">
-            <span class="inline-block px-4 py-2 bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-400 rounded-full text-sm font-semibold mb-4">
-              Lokale KI-Plattform
+            <span class="inline-block px-4 py-2 bg-gradient-to-r from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 text-amber-700 dark:text-amber-400 rounded-full text-sm font-semibold mb-4">
+              🚧 In Entwicklung • Für KMU konzipiert • Bereits im Einsatz
             </span>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white mb-6">
-              Webstree – <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">Intelligente Zusammenarbeit</span>
+              Webstree – <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">Digital souverän</span>
             </h2>
             <p class="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-              Die KI-Plattform für Teams, die Wert auf Datenschutz und Unabhängigkeit legen. 
-              Betreiben Sie Webstree lokal oder auf Ihrer eigenen Server-Infrastruktur.
+              Die KI-Plattform für <strong class="text-neutral-900 dark:text-white">kleine und mittlere Unternehmen</strong>. 
+              Behalten Sie die Kontrolle über Ihre Daten – lokal, sicher, unabhängig von Cloud-Anbietern.
             </p>
           </div>
 
@@ -676,12 +682,12 @@ const getCategoryColor = (color: string) => {
             <!-- Text Content -->
             <div>
               <h3 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
-                Ihr persönlicher KI-Assistent – ohne Kompromisse
+                Warum Webstree für KMU?
               </h3>
               <p class="text-lg text-neutral-600 dark:text-neutral-300 mb-8 leading-relaxed">
-                <strong class="text-neutral-900 dark:text-white">Webstree</strong> ist Ihre autonome Business-Plattform, die direkt auf Ihrem lokalen Rechner 
-                oder einem dedizierten Server in Ihrem Unternehmen läuft. Keine externen Cloud-Dienste, keine Datenübertragung an Dritte – 
-                volle Kontrolle über Ihre sensiblen Informationen.
+                <strong class="text-neutral-900 dark:text-white">Webstree</strong> ist die Open Source KI-Plattform, 
+                die speziell für die Bedürfnisse von KMU entwickelt wird. Keine teuren Cloud-Abos, keine Datenabhängigkeit – 
+                Sie behalten die volle Kontrolle. <em class="text-amber-600 dark:text-amber-400">Derzeit in Entwicklung.</em>
               </p>
               
               <div class="space-y-5 mb-10">
@@ -742,10 +748,14 @@ const getCategoryColor = (color: string) => {
                 <div class="flex flex-col items-center text-center mb-8">
                   <div class="relative mb-4">
                     <div class="absolute inset-0 bg-violet-400 rounded-full blur-xl opacity-30 animate-pulse"></div>
-                    <img src="/WebstreeMaskot.png" alt="Webstree – AI Autonomous Business Platform" class="relative w-28 h-28 object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-300" />
+                    <img src="/WebiMaskot.png" alt="WEBI – KI-Maskottchen" class="relative w-28 h-28 object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 class="text-2xl font-bold text-neutral-900 dark:text-white mb-1">Webstree</h3>
+                  <h3 class="text-2xl font-bold text-neutral-900 dark:text-white mb-1">WEBI</h3>
                   <p class="text-violet-600 dark:text-violet-400 font-medium">AI Autonomous Business Platform</p>
+                  <!-- Webstree Logo -->
+                  <a href="https://webstree.com" target="_blank" class="mt-3 flex items-center gap-2 px-4 py-2 bg-slate-800 dark:bg-transparent rounded-lg hover:bg-slate-700 dark:hover:bg-neutral-700/50 transition-colors">
+                    <img src="/logo.svg" alt="Webstree" class="h-6 object-contain" />
+                  </a>
                 </div>
 
                 <!-- Feature Grid -->
@@ -954,23 +964,30 @@ const getCategoryColor = (color: string) => {
       </section>
 
       <!-- CTA Section -->
-      <section class="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-violet-700 relative overflow-hidden">
+      <section class="py-20 bg-gradient-to-br from-violet-600 via-purple-700 to-violet-800 relative overflow-hidden">
         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Interesse an unseren Tools?</h2>
-          <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-            Vereinbaren Sie ein unverbindliches Gespräch. Wir zeigen Ihnen, welche Tools zu Ihren Anforderungen passen.
+          <span class="inline-block px-4 py-2 bg-amber-500/20 backdrop-blur-sm rounded-full text-sm font-medium text-amber-200 mb-6 border border-amber-400/30">
+            🚧 In Entwicklung • Early Access verfügbar
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Werden Sie Teil der Webstree-Community</h2>
+          <p class="text-violet-100 text-lg mb-8 max-w-2xl mx-auto">
+            Die KI-Plattform für KMU entsteht gerade. Erste Kunden setzen Webstree bereits ein – 
+            sichern Sie sich jetzt frühen Zugang und gestalten Sie die Entwicklung mit.
           </p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors shadow-lg">
-              Gespräch vereinbaren
+            <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-3 bg-white text-violet-700 px-8 py-4 rounded-xl font-semibold hover:bg-violet-50 transition-colors shadow-lg">
+              <img src="/logo.svg" alt="Webstree" class="w-6 h-6 object-contain" />
+              Early Access sichern
+            </a>
+            <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-colors">
+              Beratung für KMU
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </a>
-            <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-violet-500/20 to-purple-500/20 backdrop-blur-sm border border-violet-300/30 text-white px-8 py-4 rounded-xl font-semibold hover:from-violet-500/30 hover:to-purple-500/30 transition-colors">
-              <img src="/WebstreeMaskot.png" alt="Webstree" class="w-6 h-6 object-contain" />
-              Webstree – Lokale KI ohne Kosten
-            </a>
           </div>
+          <p class="text-violet-200/80 text-sm mt-6">
+            Entstanden in Zusammenarbeit mit IC-RESULTING & Partner • Entwickelt in Deutschland
+          </p>
         </div>
       </section>
     </main>
@@ -1068,46 +1085,52 @@ const getCategoryColor = (color: string) => {
         <div class="grid md:grid-cols-4 gap-8 mb-8">
           <div class="md:col-span-2">
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center">
+              <div class="w-10 h-10 bg-gradient-to-br from-violet-500 to-purple-600 rounded-xl flex items-center justify-center">
                 <span class="text-white font-bold">IC</span>
               </div>
-              <span class="text-lg font-bold text-white">IC-RESULTING</span>
+              <span class="text-lg font-bold text-white">IC-RESULTING & Partner</span>
             </div>
             <p class="text-sm max-w-md mb-4">
-              Professionelle Software-Lösungen mit KI-Funktionen. Entwickelt aus jahrelanger Projekt- und Service-Management-Erfahrung.
+              <strong class="text-white">Entstanden in Zusammenarbeit mit IC-RESULTING & Partner.</strong> 
+              Entwickelt in Deutschland. Open Source KI-Ökosystem, 100% DSGVO-konform.
             </p>
-            <div class="flex items-center gap-2 px-3 py-2 bg-slate-800 rounded-lg w-fit">
-              <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
-              <span class="text-sm text-cyan-400">Partner: webstree.com</span>
-            </div>
+            <a href="https://webstree.com" target="_blank" class="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-violet-900/50 to-purple-900/50 border border-violet-700/50 rounded-lg w-fit hover:from-violet-800/50 hover:to-purple-800/50 transition-colors">
+              <img src="/logo.svg" alt="Webstree" class="w-5 h-5 object-contain" />
+              <span class="text-sm text-violet-300">Webstree – Entwickelt in Deutschland</span>
+            </a>
           </div>
           <div>
-            <h4 class="font-semibold text-white mb-4">Kontakt</h4>
+            <h4 class="font-semibold text-white mb-4">Standort Deutschland</h4>
             <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-violet-400">📍</span>
+                Wiesbaden, Hessen
+              </li>
               <li>info@ic-resulting.de</li>
               <li>+49 176 618 659 80</li>
-              <li>Wiesbaden • Berlin • Köln</li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold text-white mb-4">Links</h4>
             <ul class="space-y-2 text-sm">
-              <li><a href="https://ic-resulting.de" target="_blank" class="hover:text-white transition-colors">ic-resulting.de</a></li>
-              <li><a href="https://webstree.com" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
-                <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                webstree.com
+              <li><a href="https://webstree.com" target="_blank" class="hover:text-violet-400 transition-colors flex items-center gap-2 font-medium text-white">
+                Webstree.com →
               </a></li>
+              <li><a href="https://ic-resulting.de" target="_blank" class="hover:text-white transition-colors">ic-resulting.de</a></li>
               <li><NuxtLink to="/impressum" class="hover:text-white transition-colors">Impressum</NuxtLink></li>
               <li><NuxtLink to="/datenschutz" class="hover:text-white transition-colors">Datenschutz</NuxtLink></li>
             </ul>
           </div>
         </div>
         <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
-          <span>© {{ new Date().getFullYear() }} IC-RESULTING. Alle Rechte vorbehalten.</span>
+          <span>© {{ new Date().getFullYear() }} Entstanden in Zusammenarbeit mit IC-RESULTING & Partner.</span>
           <div class="flex items-center gap-4">
-            <span class="text-slate-500">Partner:</span>
-            <a href="https://webstree.com" target="_blank" class="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+            <span class="px-3 py-1.5 bg-slate-800 rounded-full text-xs flex items-center gap-2">
+              <span class="text-base">🇩🇪</span>
+              Entwickelt in Deutschland
+            </span>
+            <a href="https://webstree.com" target="_blank" class="flex items-center gap-2 text-violet-400 hover:text-violet-300 transition-colors">
+              <img src="/logo.svg" alt="Webstree" class="w-4 h-4 object-contain" />
               Webstree.com
             </a>
           </div>
