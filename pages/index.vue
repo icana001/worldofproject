@@ -1,14 +1,66 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
-// SEO - Webstree KI-Plattform für KMU
+// SEO - Webstree KI-Plattform / AI Platform
 useSeoMeta({
-  title: 'Webstree | KI-Plattform für KMU – Digital souverän bleiben',
-  description: 'Webstree: Die Open Source KI-Plattform für kleine und mittlere Unternehmen. Lokal, digital souverän, DSGVO-konform. In Entwicklung – bereits bei ersten Kunden im Einsatz.',
-  ogTitle: 'Webstree – KI-Plattform für KMU | Digital souverän bleiben',
-  ogDescription: 'Open Source KI für den Mittelstand. Lokale Datenhoheit, keine Cloud-Abhängigkeit. In Entwicklung – jetzt Early Access sichern.',
-  twitterTitle: 'Webstree – KI für KMU | Digital souverän',
-  twitterDescription: 'Die Open Source KI-Plattform für KMU. Lokal, sicher, DSGVO-konform. In Entwicklung.',
+  title: 'IC-RESULTING Software Suite | Webstree KI-Plattform, UPQR, Dudo B2B',
+  description: 'IC-RESULTING Software Suite: Webstree KI-Plattform, UPQR digitales QR-Menü und Dudo B2B Bestandsverwaltung. Deutsche Software – lokal, sicher, DSGVO-konform. Entwickelt in Wiesbaden.',
+  ogTitle: 'IC-RESULTING Software Suite | Webstree, UPQR & Dudo B2B',
+  ogDescription: 'Professionelle Softwarelösungen für KMU: KI-Plattform, digitales QR-Menü und Bestandsverwaltung. Entwickelt in Deutschland, DSGVO-konform.',
+  ogImage: 'https://worldofproject.com/IC-Resulting_Wiesbaden_logo.png',
+  twitterTitle: 'IC-RESULTING Software Suite | Webstree, UPQR & Dudo B2B',
+  twitterDescription: 'Professionelle Software für KMU: KI-Plattform, QR-Menü, Bestandsverwaltung. DSGVO-konform, entwickelt in Wiesbaden.',
+  twitterImage: 'https://worldofproject.com/IC-Resulting_Wiesbaden_logo.png',
+})
+
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://worldofproject.com' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'IC-RESULTING Software Suite',
+        description: 'Professionelle Softwarelösungen für KMU: Webstree KI-Plattform, UPQR digitales QR-Menü und Dudo B2B Bestandsverwaltung.',
+        url: 'https://worldofproject.com',
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Webstree – Open Source KI-Plattform',
+              url: 'https://worldofproject.com/webstree',
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'UPQR – Digitales QR-Menü',
+              url: 'https://worldofproject.com/qr-menu',
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: 'Dudo B2B – Bestandsverwaltung',
+              url: 'https://worldofproject.com/dudo-b2b',
+            },
+          ],
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'IC-RESULTING & Partner',
+          url: 'https://ic-resulting.de',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://worldofproject.com/IC-Resulting_Wiesbaden_logo.png',
+          },
+        },
+      }),
+    },
+  ],
 })
 
 // Dark mode
@@ -583,9 +635,7 @@ const getCategoryColor = (color: string) => {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <a href="#" class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center">
-              <span class="text-white font-bold text-lg">IC</span>
-            </div>
+            <img src="/IC-Resulting_Wiesbaden_logo.png" alt="IC-RESULTING Logo" class="w-10 h-10 rounded-xl object-contain" />
             <div>
               <span class="text-lg font-bold text-neutral-900 dark:text-white">IC-RESULTING</span>
               <span class="hidden sm:inline text-sm text-neutral-500 dark:text-neutral-400 ml-2">Software Suite</span>
@@ -593,6 +643,11 @@ const getCategoryColor = (color: string) => {
           </a>
 
           <div class="flex items-center gap-4">
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+              <NuxtLink to="/webstree" class="text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Webstree</NuxtLink>
+              <NuxtLink to="/qr-menu" class="text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">QR-Menü</NuxtLink>
+              <NuxtLink to="/dudo-b2b" class="text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Dudo B2B</NuxtLink>
+            </nav>
             <a href="https://ic-resulting.de/kontakt" target="_blank" class="hidden sm:inline-flex btn-primary text-sm py-2 px-4">
               Kontakt
             </a>
@@ -797,12 +852,12 @@ const getCategoryColor = (color: string) => {
                 </div>
 
                 <!-- CTA -->
-                <a href="https://webstree.com" target="_blank" class="block w-full text-center bg-gradient-to-r from-violet-600 to-purple-600 text-white px-6 py-4 rounded-xl font-semibold hover:from-violet-500 hover:to-purple-500 transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]">
-                  Mehr erfahren →
+                <a href="https://ic-resulting.de/kontakt" target="_blank" class="block w-full text-center bg-gradient-to-r from-violet-600 to-purple-600 text-white px-6 py-4 rounded-xl font-semibold hover:from-violet-500 hover:to-purple-500 transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]">
+                  Early Access anfragen →
                 </a>
                 
                 <p class="text-center text-sm text-neutral-500 dark:text-neutral-400 mt-4">
-                  In Entwicklung – Jetzt für Early Access registrieren
+                  In Entwicklung – Kontaktieren Sie uns für Informationen
                 </p>
               </div>
             </div>
@@ -816,8 +871,8 @@ const getCategoryColor = (color: string) => {
                 <div class="absolute inset-0 bg-gradient-to-br from-violet-400 to-purple-500 rounded-3xl blur-3xl opacity-15"></div>
                 <div class="relative bg-white dark:bg-neutral-800 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-4 shadow-2xl overflow-hidden">
                   <img 
-                    src="/IDEA_WEBSTREE.png" 
-                    alt="Webstree Plattform Vision – Die wachsende KI-Plattform" 
+                    src="/WEBI_WEBSTREE_OpenSource_KI-Plattform.png" 
+                    alt="Webstree Open Source KI-Plattform – Übersicht aller 48+ Features für KMU" 
                     class="w-full h-auto rounded-xl"
                   />
                 </div>
@@ -867,8 +922,8 @@ const getCategoryColor = (color: string) => {
                 </div>
 
                 <div class="flex flex-wrap gap-4">
-                  <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-violet-500 hover:to-purple-500 transition-all shadow-lg hover:shadow-xl">
-                    Jetzt Early Access sichern
+                  <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-violet-500 hover:to-purple-500 transition-all shadow-lg hover:shadow-xl">
+                    Jetzt Early Access anfragen
                   </a>
                   <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 text-violet-700 dark:text-violet-400 px-6 py-3 rounded-xl font-semibold hover:bg-violet-50 dark:hover:bg-violet-900/20 transition-all">
                     Vertriebspartner werden →
@@ -976,9 +1031,9 @@ const getCategoryColor = (color: string) => {
             sichern Sie sich jetzt frühen Zugang und gestalten Sie die Entwicklung mit.
           </p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="https://webstree.com" target="_blank" class="inline-flex items-center gap-3 bg-white text-violet-700 px-8 py-4 rounded-xl font-semibold hover:bg-violet-50 transition-colors shadow-lg">
+            <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-3 bg-white text-violet-700 px-8 py-4 rounded-xl font-semibold hover:bg-violet-50 transition-colors shadow-lg">
               <img src="/logo.svg" alt="Webstree" class="w-6 h-6 object-contain" />
-              Early Access sichern
+              Early Access anfragen
             </a>
             <a href="https://ic-resulting.de/kontakt" target="_blank" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-colors">
               Beratung für KMU
@@ -1085,9 +1140,7 @@ const getCategoryColor = (color: string) => {
         <div class="grid md:grid-cols-4 gap-8 mb-8">
           <div class="md:col-span-2">
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-gradient-to-br from-violet-500 to-purple-600 rounded-xl flex items-center justify-center">
-                <span class="text-white font-bold">IC</span>
-              </div>
+              <img src="/IC-Resulting_Wiesbaden_logo.png" alt="IC-RESULTING Logo" class="w-10 h-10 rounded-xl object-contain" />
               <span class="text-lg font-bold text-white">IC-RESULTING & Partner</span>
             </div>
             <p class="text-sm max-w-md mb-4">
@@ -1108,6 +1161,14 @@ const getCategoryColor = (color: string) => {
               </li>
               <li>info@ic-resulting.de</li>
               <li>+49 176 618 659 80</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white mb-4">Produkte</h4>
+            <ul class="space-y-2 text-sm">
+              <li><NuxtLink to="/webstree" class="hover:text-violet-400 transition-colors font-medium text-white">Webstree – KI-Plattform</NuxtLink></li>
+              <li><NuxtLink to="/qr-menu" class="hover:text-white transition-colors">UPQR – QR-Menü</NuxtLink></li>
+              <li><NuxtLink to="/dudo-b2b" class="hover:text-white transition-colors">Dudo B2B</NuxtLink></li>
             </ul>
           </div>
           <div>

@@ -2,11 +2,25 @@ DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /
 
-# Handle clean URLs for Nuxt
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+# HTTPS erzwingen (ohne Loop)
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Wenn Datei oder Verzeichnis existiert, direkt ausliefern
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Clean URLs: /impressum -> /impressum/index.html oder /impressum.html
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.*)$ $1/index.html [L]
+
+# Fallback auf index.html (SPA-Modus)
+RewriteRule ^ /index.html [L]
 
 # Custom 404
 ErrorDocument 404 /404.html

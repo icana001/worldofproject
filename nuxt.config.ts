@@ -9,12 +9,12 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://worldofproject.com',
-    name: 'WorldOfProject',
+    name: 'WorldOfProject – IC-RESULTING Software Suite',
   },
 
   app: {
     head: {
-      title: 'Webstree – KI-Plattform für KMU | Digital souverän bleiben',
+      title: 'Webstree – KI-Plattform & AI Platform | Deutsche KI für KMU',
       htmlAttrs: {
         lang: 'de',
       },
@@ -26,14 +26,14 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Webstree: Die Open Source KI-Plattform für KMU. Behalten Sie die Kontrolle über Ihre Daten – lokal, sicher, digital souverän. In Entwicklung. Entstanden mit IC-RESULTING & Partner.',
+            'Webstree: Die Open Source KI-Plattform und AI Platform für KMU. Deutsche KI-Lösung – lokal, sicher, DSGVO-konform. In Entwicklung. Entstanden mit IC-RESULTING & Partner.',
         },
         { name: 'format-detection', content: 'telephone=no' },
-        // SEO Keywords - Fokus auf KMU und digitale Souveränität
+        // SEO Keywords - Fokus auf KI/AI Plattform
         {
           name: 'keywords',
           content:
-            'KI für KMU, KI Plattform Mittelstand, digitale Souveränität, lokale KI, KMU Software, Open Source KI, Webstree, Self-Hosted AI, DSGVO KI, KI ohne Cloud, Unternehmenssoftware KMU, IC-RESULTING, Private AI, Datenschutz KI, KI Deutschland',
+            'KI Plattform, AI Plattform, KI-Plattform Deutschland, AI Platform Germany, Künstliche Intelligenz Plattform, German AI, Deutsche KI, KI für KMU, Open Source KI, Webstree, Self-Hosted AI, DSGVO KI, lokale KI, Private AI, KI ohne Cloud, Enterprise AI, Business AI Platform, IC-RESULTING',
         },
         // Robots
         { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
@@ -79,8 +79,9 @@ export default defineNuxtConfig({
         { name: 'msapplication-TileColor', content: '#7c3aed' },
       ],
       link: [
+        { rel: 'icon', type: 'image/png', href: '/IC-Resulting_Wiesbaden_logo.png' },
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/IC-Resulting_Wiesbaden_logo.png' },
         { rel: 'canonical', href: 'https://worldofproject.com' },
         // Alternate Language Links
         { rel: 'alternate', hreflang: 'de', href: 'https://worldofproject.com' },
@@ -117,7 +118,9 @@ export default defineNuxtConfig({
                 url: 'https://ic-resulting.de',
                 logo: {
                   '@type': 'ImageObject',
-                  url: 'https://worldofproject.com/og-image.png',
+                  url: 'https://worldofproject.com/IC-Resulting_Wiesbaden_logo.png',
+                  width: 512,
+                  height: 512,
                 },
                 sameAs: [
                   'https://webstree.com',
@@ -196,12 +199,15 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/', '/impressum', '/datenschutz', '/sitemap.xml'],
+      routes: ['/', '/impressum', '/datenschutz', '/webstree', '/qr-menu', '/dudo-b2b', '/sitemap.xml'],
     },
   },
 
   routeRules: {
     '/': { prerender: true },
+    '/webstree': { prerender: true },
+    '/qr-menu': { prerender: true },
+    '/dudo-b2b': { prerender: true },
     '/impressum': { prerender: true },
     '/datenschutz': { prerender: true },
   },

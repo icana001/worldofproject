@@ -1,27 +1,11 @@
-# Webstree – Entwickelt in Deutschland
-# Entstanden in Zusammenarbeit mit IC-RESULTING & Partner
+# IC-RESULTING Software Suite – WorldOfProject
 # https://worldofproject.com
 
 User-agent: *
 Allow: /
-
-# Sitemaps
-Sitemap: https://worldofproject.com/sitemap.xml
-
-# Crawl-delay für respektables Crawling
-Crawl-delay: 1
-
-# Blockiere sensible Pfade
 Disallow: /api/
 Disallow: /_nuxt/
 Disallow: /admin/
 
-# Google-spezifisch
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-# Bing-spezifisch
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
+# Sitemaps
+Sitemap: https://worldofproject.com/sitemap.xml
