@@ -6,7 +6,7 @@ useHead({
     { name: 'description', content: 'Impressum von WorldOfProject - Ein Produkt von IC-RESULTING, Dipl.-Inf. Ibrahim Canakci, Wiesbaden.' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://worldofproject.com/impressum' }
+    { rel: 'canonical', href: 'https://worldofproject.com/impressum/' }
   ]
 })
 </script>

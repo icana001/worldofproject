@@ -12,7 +12,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://worldofproject.com/dudo-b2b' }
+    { rel: 'canonical', href: 'https://worldofproject.com/dudo-b2b/' }
   ],
   script: [
     {
@@ -23,7 +23,7 @@ useHead({
         name: 'Dudo B2B',
         applicationCategory: 'BusinessApplication',
         description: 'Digitale Plattform für Bestands- und Bestellverwaltung. Zentrale Steuerung über Lager, Filialen und Bestellungen.',
-        url: 'https://worldofproject.com/dudo-b2b',
+        url: 'https://worldofproject.com/dudo-b2b/',
         image: 'https://worldofproject.com/DUDU_Plattform_Werbung.png',
         offers: {
           '@type': 'Offer',

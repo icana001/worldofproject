@@ -12,7 +12,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://worldofproject.com/qr-menu' }
+    { rel: 'canonical', href: 'https://worldofproject.com/qr-menu/' }
   ],
   script: [
     {
@@ -23,7 +23,7 @@ useHead({
         name: 'UPQR',
         applicationCategory: 'BusinessApplication',
         description: 'Digitales QR-Menü für Restaurants und Gastronomie. QR-Code scannen, Speisekarte öffnen, kontaktlos bestellen.',
-        url: 'https://worldofproject.com/qr-menu',
+        url: 'https://worldofproject.com/qr-menu/',
         image: 'https://worldofproject.com/UPQR-Werbung.png',
         offers: {
           '@type': 'Offer',

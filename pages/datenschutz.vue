@@ -6,7 +6,7 @@ useHead({
     { name: 'description', content: 'Datenschutzerklärung von WorldOfProject gemäß DSGVO. Informationen zur Datenverarbeitung und Ihren Rechten.' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://worldofproject.com/datenschutz' }
+    { rel: 'canonical', href: 'https://worldofproject.com/datenschutz/' }
   ]
 })
 </script>

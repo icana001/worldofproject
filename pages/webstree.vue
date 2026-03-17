@@ -12,7 +12,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://worldofproject.com/webstree' }
+    { rel: 'canonical', href: 'https://worldofproject.com/webstree/' }
   ],
   script: [
     {
@@ -24,7 +24,7 @@ useHead({
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Windows, macOS, Linux',
         description: 'Open Source KI-Plattform für KMU mit 48+ Features. Lokal, DSGVO-konform, Self-Hosted.',
-        url: 'https://worldofproject.com/webstree',
+        url: 'https://worldofproject.com/webstree/',
         image: 'https://worldofproject.com/WEBI_WEBSTREE_OpenSource_KI-Plattform.png',
         offers: {
           '@type': 'Offer',
