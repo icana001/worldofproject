@@ -33,8 +33,10 @@ Write-Host "Connecting to Strato server..." -ForegroundColor Cyan
 Write-Host "Please enter password when prompted." -ForegroundColor Gray
 Write-Host ""
 
-# SSH commands to run on Strato (single line to avoid CRLF issues)
-$sshCommands = 'cd ~/STRATO-apps && if [ -d "WorldOfProject" ]; then cd WorldOfProject && git pull origin main; else git clone https://github.com/icana001/worldofproject.git WorldOfProject; fi && echo "" && echo "Creating symlink to public_html..." && rm -rf ~/public_html/worldofproject 2>/dev/null; ln -sf ~/STRATO-apps/WorldOfProject/dist ~/public_html/worldofproject && echo "Deployment complete!" && ls -la ~/STRATO-apps/WorldOfProject/dist/'
+# SSH commands to run on Strato
+# 1. Git pull latest code
+# 2. Copy dist/* to ~/WorldOfProject/ (domain document root)
+$sshCommands = 'cd ~/STRATO-apps && if [ -d "WorldOfProject" ]; then cd WorldOfProject && git pull origin main; else git clone https://github.com/icana001/worldofproject.git WorldOfProject; fi && echo "Copying files to domain root..." && rm -rf ~/WorldOfProject/* ~/WorldOfProject/.htaccess 2>/dev/null && cp -r ~/STRATO-apps/WorldOfProject/dist/* ~/STRATO-apps/WorldOfProject/dist/.htaccess ~/WorldOfProject/ && echo "Deployment complete!" && ls ~/WorldOfProject/'
 
 ssh "${stratoUser}@${stratoHost}" $sshCommands
 
